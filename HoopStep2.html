@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<!-- Google fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Noto+Sans:700italic,400'
+	rel='stylesheet' type='text/css'>
+	<script src="includes/jquery-2.1.4.min.js">
+	</script><!-- Latest compiled and minified CSS -->
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Optional theme -->
+	<link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+	<!-- Latest compiled and minified JavaScript -->
+
+	<script src="bootstrap/js/bootstrap.min.js">
+	</script><!-- Hula hoop CSS -->
+	<link href="includes/style.css" rel="stylesheet"><!-- Hula hoop jQuery -->
+
+	<script src="includes/code.js">
+	</script>
+	<link href="jquery-ui-1.11.4.custom/jquery-ui.min.css" rel="stylesheet">
+	<script src="jquery-ui-1.11.4.custom/external/jquery/jquery.js">
+	</script>
+	<script src="jquery-ui-1.11.4.custom/jquery-ui.min.js">
+	</script>
+	<title>Hula Hoop page-3</title>
+</head>
+<body>
+	<div id="wrapper">
+		<nav class="navbar navbar-default navBarPage">
+			<div class="container-fluid">
+				<h1><a href="index.html" id="navLogo">MAZI</a></h1>
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button aria-expanded="false" class="navbar-toggle burgerColor collapsed"
+					data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type=
+					"button"><span class="sr-only">Toggle navigation</span> <span class=
+					"icon-bar"></span> <span class="icon-bar"></span> <span class=
+					"icon-bar"></span></button>
+				</div>
+				<section class="simbleWrapper">
+					<a href="#"><span aria-hidden="true" class=
+					"glyphicon glyphicon-heart simble"></span></a> <a href=
+					"#"><span aria-hidden="true" class=
+					"glyphicon glyphicon glyphicon-user simble"></span></a> <a href=
+					"#"><span aria-hidden="true" class=
+					"glyphicon glyphicon-shopping-cart simble"></span></a>
+				</section>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right navUl">
+						<li>
+							<a href="#">עצב חישוק בעצמך</a>
+						</li>
+						<li>
+							<a href="#">חנות</a>
+						</li>
+						<li>
+							<a href="#">דוכנים וסדנאות</a>
+						</li>
+						<li>
+							<a href="#">צור קשר</a>
+						</li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
+		<main class="container mainSecondPage mainThirdPage">
+			<article class="designHula">
+				<h1>סיכום ותשלום</h1>פעם ראשונה כאן ? <a href="#">הרשם</a> עכשיו
+			</article><button aria-label="Left Align" class="btn btn-default1 toSumUp2"
+			type="button"><span aria-hidden="true" class=
+			"glyphicon glyphicon-chevron-left"></span></button> <button aria-label=
+			"Left Align" class="btn btn-default1 toSumUp1" type=
+			"button"><span aria-hidden="true" class=
+			"glyphicon glyphicon-chevron-right"></span></button>
+			<section class="summary">
+				<div class="summaryImg"><img src="images/sumpic.png"></div>
+				<article class="summaryText">
+					<h2>פרטי המוצר</h2>,המוצר אותו אתם בוחרים ישמש לכם כחישוק<br>
+					זהו הדף חשבון בדף זה אתם תדרשו לשלם על החישוק אותו תזמינו<br>
+					.לאחר התשלום החישוק במבוקש ישלח אילכם בדואר<br>
+					.התחילו לרקוד
+				</article>
+				<article class="summaryText">
+					<form id="summaryForm" name="summaryForm" action"" method="">
+						<label><a href="#"><span aria-hidden="true" class=
+						"glyphicon glyphicon glyphicon-question-sign question"></span></a>
+						<input class="dataInputAge" list="age" name="hulaSize" required="">
+						<datalist id="age">
+							<option value="100">
+								ילדים
+							</option>
+							<option value="110">
+								נערים
+							</option>
+							<option value="120">
+								בוגרים
+							</option>
+							<option value="130">
+								מקצוענים
+							</option>
+						</datalist> גודל</label><br>
+						<label><a href="#"><span aria-hidden="true" class=
+						"glyphicon glyphicon glyphicon-question-sign question"></span></a>
+						<input class="dataInputKind" list="kind" name="hulaSize" required="">
+						<datalist id="kind">
+							<option value="10">
+								קל
+							</option>
+							<option value="20">
+								כבד
+							</option>
+							<option value="30">
+								כבד מאוד
+							</option>
+							<option value="40">
+								אולטימט
+							</option>
+						</datalist> משקל</label><br>
+						<label><input class="hulaAmount" name="amount" required="" type=
+						"text">כמות</label>
+					</form>
+					<h2 id="displaySum"></h2>
+				</article>
+				<div class="summaryText">
+					<h2>מחיר</h2>
+				</div>
+				<article class="summaryText">
+					עוד טקסט עוד טקסט<br>
+					עוד טקסט עוד טקסט עוד
+				</article>
+				<h2 id="addToCart"><a href="#">הוסף לעגלה</a></h2>
+				<article id="toMyFavorit">
+					<a href="#">הוסף לרשימה שלי <span aria-hidden="true" class=
+					"glyphicon glyphicon-heart"></span></a>
+				</article><br>
+				<article class="optionSummary">
+					<ul>
+						<li>
+							<a href="#"><img src="images/faceBook.png"title="faceBook" alt="faceBook"></a>
+						</li>
+						<li>
+							<a href="#"><img src="images/pick.png"title="pick" alt="pick"></a>
+						</li>
+						<li>
+							<a href="#"><img src="images/twitter.png" title="twitter" alt="twitter"></a>
+						</li>
+						<li style="list-style: none; display: inline">
+							<div style="margin-left: 2em">
+								<div class="clear"></div>
+							</div>
+						</li>
+					</ul>
+				</article>
+			</section>
+			<div id="questionDiv">
+				זהו הסבר על הבחרה שלך מקווה שעזרתי.
+			</div>
+		</main>
+	</div>
+</body>
+</html>

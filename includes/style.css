@@ -1,0 +1,805 @@
+/***********************************
+**								  **
+**		   default css            **                      
+**							      **
+***********************************/
+* {
+    padding: 0px;
+    margin: 0px;
+}
+main, section, header, footer,nav,article {
+    display: block;
+}
+#wrapper {
+	margin: 0px auto;
+	width: 85%;
+}
+.clear {
+	clear:both;
+}
+a {
+	text-decoration: none;
+}
+ul {
+	list-style: none;
+}
+.navbar {
+	margin-bottom: 0px;
+}
+/* change the button name later */
+.btn-default1 {
+	float: right;
+	margin-top: 207px;
+	background: transparent;
+	border: none;
+	color: #100F10;
+	margin-right: 10px;
+}
+/*******************END Default***********************************/
+/***********************************
+**								  **
+**		Page-1 index.html         **                      
+**							      **
+***********************************/
+.welcomeHeader {
+	background: #323442;
+	height: 137px;
+	direction: rtl;
+	border: none;
+	border-radius: 0px;
+}
+#welcomeHeader h1 {
+	color: #e2c38d;
+	margin-top: 4px;
+	font-size: 80px;	
+}
+#welcomeHeader h3 {
+	margin: -25px;
+	font-size: 40px;
+	margin-left: 17px;
+	color: #e2c38d;
+}
+#logo {
+    text-decoration: none;
+    display: block;
+    color: #e2c38d;
+    margin-left: 60px;
+    font-family: 'Noto Serif', serif;
+    font-size: 80px;
+    float: left;
+}
+.headerNavUl {
+	margin-top: -3px;
+	background: #323442;
+	margin-top: 1px;
+}
+.headerNavUl li {
+	margin-top: 20px;
+}
+.headerNavUl a {
+	color: #e2c38d !important;
+}
+.headerNavUl a:hover {
+	color: #E9E9E2 !important;
+}
+.burgerColor {
+	background: #e2c38d;
+	margin-top: 0px;
+}
+.glyphicon-heart {
+	margin-top: -10px;
+	color: #e2c38d;
+	font-size: 25px;
+
+}
+.glyphicon-shopping-cart {
+	margin-top: -10px;
+	color: #e2c38d;
+	font-size: 25px;	
+}
+.glyphicon-user {
+	margin-top: -10px;
+	color: #e2c38d;
+	font-size: 25px;
+
+}
+.connectBtn {
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom:3px;
+	padding-top: 4px;
+	border: 1px solid #e2c38d;
+	background: #323442;
+	color: #e2c38d;
+	margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+.connectBtn:hover {
+	background: #B3BCA7;
+}
+.navBar {
+	background: #28293a;
+	float: left;
+	width: 100%;
+	height: 72px;
+	margin-top: -10px;
+	border:0px;
+}
+.navBar ul li {
+	margin-top: 17px;
+	float: right;
+	margin-right: 35px;
+}
+.navBar a {
+	text-decoration: none;
+	font-size: 25px;
+	margin-right: 25px;
+	color:  #e2c38d;
+}
+.navBar a:hover {
+	color: #E1DCE2;	
+}
+.main {
+	background: url("../images/main.png");
+	float: left;
+	width: 100%;
+	height: 691px;
+	margin-top: -20px;
+	background-repeat: round;
+}
+.openWord {
+	text-align: right;
+	margin: 60px;
+	color: #090A09;
+	font-size: 25px;
+}
+.mainBtn {
+	margin: 50px;
+	text-align: right;
+	
+}
+.mainBtn a {
+	padding: 10px;
+	text-decoration: none;
+	border: 2px solid #E2C38D;
+	border-radius: 3px;
+	color: #E2C38D;	
+}
+.mainBtn a:hover {
+	background: #A8A7A9;
+}
+#dialog {
+	width: 382px;
+	height: 426px;
+	position: absolute;
+	top: 230px;
+    left: 600px;
+	z-index: 2000px;
+	border: 2px solid black;
+	background: #d3be9b;
+	direction: rtl;
+}
+.dialogHeader {
+	margin-right: 11px;
+}
+.loginW {
+    width: 336px;
+    height: 49px;
+    margin-right: 11px;
+    padding-right: 10px;
+    margin-bottom: 8px;
+}
+::-webkit-input-placeholder {
+    color:    #74727B;
+    margin-right: 10px;
+}
+.checkBoxW {
+	margin-top: 10px;
+}
+.checkW {
+	width: 25px;
+	font-size: 10px;
+}
+.forgetW {
+	margin-right: 11px;
+
+}
+.forgetW a {
+	color: #101111;
+}
+.social{
+	margin-top: 10px;
+	margin-right: 11px;
+	margin-bottom: 8px;
+}
+/********************END PAGE-1**********************************/
+/***********************************
+**								  **
+**		Page-2 HoopStep1.html     **                      
+**							      **
+***********************************/
+.navBarPage {
+	background: #28293a;
+    width: 100%;
+    height: 72px;
+}
+#navLogo {
+	text-decoration: none;
+	display: block;
+	color: #e2c38d;
+	margin-left: 60px;
+	font-family: 'Noto Serif', serif;
+	font-size: 50px;
+	float: left;
+	margin-top: -10px;
+}
+.simbleWrapper{
+	position: absolute;
+	top: 33px;
+	left: 230px;
+}
+.simbleWrapper .glyphicon:hover {
+	color: #E9F5F7 ;
+}
+.navUl {
+	margin-top: -6px;
+	text-align: right;
+	background: #28293A;
+}
+.navUl a{
+	color: #e2c38d !important;
+	font-size: 17px;
+}
+.navUl a:hover{
+	color: #E9F5F7 !important;
+}
+.mainSecondPage {
+	width: 100%;
+	height: 826px;
+	background: #f1e8d7;
+}
+.hulaTitle{
+	width: 100%;
+	margin-left: -30px;
+	direction: rtl;
+}
+
+.pickHulaColor2{
+	float: right;
+	margin-right: 30px;
+	margin-top: 20px;
+	background: #d8d0c1;
+	width: 216px;
+	height: 535px;
+}
+.pickHulaColor2 p {
+	float: left;
+	text-align: center;
+	padding: 10px;
+	background: #aea9a9;
+	margin-top: 13px;
+	margin-left: 11px; 
+	margin-right: 11px;
+}
+.pickHulaPattern {
+	list-style: none;
+	float: left;
+	margin-left: 5px;
+}
+.pickHulaPattern li {
+	float: left;
+	padding: 8px;
+}
+.pickHulaPattern button {
+	display: block;
+	float: left;
+}
+.btn-right {
+	float: left;
+	margin-top: 20px;
+	border-radius: 40px;
+	background: #100F10;
+	margin-right: 15px;
+}
+.btn-left {
+	float: left;
+	margin-top: 20px;
+	border-radius: 40px;
+	background: #100F10;
+	margin-left: 15px;
+}
+
+.btn-left:hover {
+	background: #9B9AA0;
+}	
+.btn-right:hover {
+	background: #B8B7BD;
+}	
+.btn-down:hover {
+	background: #B8B7BD;
+}		
+
+.glyphicon-arrow-left {
+	float: left;
+	color: #d8d0c1;
+}
+.glyphicon-arrow-right {
+	float: left;
+	color: #d8d0c1;
+}
+.glyphicon-arrow-down {
+	color: #d8d0c1;
+}
+.btn-down {
+	float: left;
+	border-radius: 40px;
+	background: #100F10;
+	margin-bottom: 14px;
+	margin-left: 85px;
+}
+.liveColorDemoHula2{
+	float: left;
+	background: #d8d0c1;
+	height: 535px;
+	width: 596px;
+	margin-top:20px;
+	margin-left: 150px;
+}
+#svgHula {
+	margin: 80px 0 0 -180px;
+	width: 800px;
+	height: 800px;
+}	
+.toSumUp2{
+	position: absolute;
+	top:250px;
+	left: 130px;
+}
+.toSumUp1{
+	position: absolute;
+	top:250px;
+	right: 130px;
+}
+.glyphicon-chevron-right {
+	font-size: 70px;
+}
+.glyphicon-chevron-left {
+	font-size: 70px;
+}
+/************************** END HoopStep1 ***************************/
+/***********************************
+**								  **
+**		Page-3 HoopStep2.html     **                      
+**							      **
+***********************************/
+.designHula {
+	float: right;
+	width: 100%;
+	text-align: right;
+	margin-right: 145px;
+	margin-top: 10px;
+	margin-bottom: 47px;
+}
+.designHula a {
+	color: #ACD5B3;
+}
+.summary {
+	width: 80%;
+	height: 546px;
+	background: #d8d0c1;
+	float: left;
+	margin-left: 10%;
+}
+.summaryImg {
+	float: left;
+	margin-top: 27px;
+	margin-left: 30px;
+}
+.summaryText {
+	text-align: right;
+	color: #000000;
+	margin-right: 28px;
+}
+#summaryForm {
+	color: black;
+	margin-top: 30px;
+}
+.dataInputAge {
+	margin-bottom: 10px;
+	background: #bcb9b9;
+	width: 97px;
+	height: 21px;
+	margin-right: 20px;
+	direction: rtl;
+	border: none;
+}
+.dataInputKind {
+	margin-bottom: 10px;
+	background: #bcb9b9;
+	width: 97px;
+	height: 21px;
+	margin-right: 10px;
+	direction: rtl;
+	border: none;
+}
+.hulaAmount {
+	width: 35px;
+	height: 21px;
+	background: #bcb9b9;
+	border-radius: 5px;
+	margin-right: 22px;
+
+}
+#addToCart {
+	float: right;
+	margin-top: 30px;
+	margin-right: 22px;
+}
+#addToCart a {
+	padding: 10px;
+	border: 3px solid #09110A;
+	text-decoration: none;
+	color: #09110A;
+}
+#addToCart a:hover {
+	background: #9F9F9F;
+}
+#toMyFavorit {
+	margin-top: 90px;
+	margin-right: -150px;
+	float: right;
+}
+.glyphicon-question-sign {
+	color: black;
+}
+#toMyFavorit .glyphicon-heart {
+	color: #c64949;
+
+}
+#toMyFavorit a {
+	color:  #09110A;
+	text-decoration: none;
+}
+#toMyFavorit a:hover {
+	color:  #805999;
+}
+#toMyFavorit .glyphicon-heart:hover {
+	color: #FF2D29;
+}
+.optionSummary {
+	float: left;
+	top: 10px;
+}
+.optionSummary ul {
+	padding-top: 0px;
+}
+.optionSummary ul li {
+	list-style-type: none;
+	float: left;
+	padding-top: 0px;
+	margin-top: 69px;
+	margin-left: 30px;
+}
+/************************** END HoopStep2 ************************/
+/***********************************
+**								  **
+**		Page-3 HoopStep2.html	  **
+**							      **
+**		Hula Hoop ring color	  **                      
+**							      **
+***********************************/
+.line1 {
+	fill:#D091C0;
+	stroke:#000000;
+	stroke-miterlimit:10;
+
+}
+.line2 {
+	fill:#D091C0;
+	stroke:#000000;
+	stroke-miterlimit:10;
+}
+.line3 {
+	fill:#D091C0;
+	stroke:#000000;
+	stroke-miterlimit:10;
+}
+.line4 {
+	fill:#D091C0;
+	stroke:#000000;
+	stroke-miterlimit:10;
+}
+.line5 {
+	fill:#D091C0;
+	stroke:#000000;
+	stroke-miterlimit:10;
+}
+.line6 {
+	fill:#D091C0;
+	stroke:#000000;
+	stroke-miterlimit:10;
+}
+.line7 {
+	fill:#D091C0;
+	stroke:#000000;
+	stroke-miterlimit:10;
+}
+.line8 {
+	fill:#D091C0;
+	stroke:#000000;
+	stroke-miterlimit:10;
+}
+/***************************** END Ring ***************************/
+/***********************************
+**								  **
+**		       MEDIA         	  **
+**							      **              
+**							      **
+***********************************/
+.active2 {
+	background: #C2B9BD;
+	border-radius:10px;
+}
+
+@media screen and (max-width: 1280px){
+	.toSumUp2{
+		position: absolute;
+		top:150px;
+		left: 100px;
+	}
+	.toSumUp1{
+		position: absolute;
+		top:150px;
+		right: 100px;
+	}
+
+}
+
+@media screen and (max-width: 1205px){
+	.liveColorDemoHula2{
+		float: left;
+		background: #d8d0c1;
+		height: 535px;
+		width: 596px;
+		margin-top:20px;
+		margin-left: 70px;
+	}	
+	#svgHula {
+		margin: 80px 0 0 -180px;
+		width: 800px;
+		height: 800px;
+	}
+	.summary {
+		height: 78%;
+	}
+}
+@media screen and (max-width: 1109px){
+	.liveColorDemoHula2{
+		float: left;
+		background: #d8d0c1;
+		height: 535px;
+		width: 596px;
+		margin-top:20px;
+		margin-left: 20px;
+	}	
+	#svgHula {
+		margin: 80px 0 0 -180px;
+		width: 800px;
+		height: 800px;
+	}
+}
+@media screen and (max-width: 1050px){
+	.mainSecondPage{
+		height: 1100px;
+	}
+	.mainThirdPage {
+		height: 890px;
+	}
+	.liveColorDemoHula2{
+		float: left;
+		background: #d8d0c1;
+		height: 300px;
+		width: 300px;
+		margin-top:20px;
+		margin-left: 50px;
+	}	
+	#svgHula {
+		margin: 60px 0 0 -90px;
+		width: 400px;
+		height: 400px;
+	}
+	.toSumUp2{
+		position: absolute;
+		top:150px;
+		left: 90px;
+	}
+	.toSumUp1{
+		position: absolute;
+		top:150px;
+		right: 90px;
+	}
+}
+@media screen and (max-width: 1000px){
+	#svgHula {
+		width:100%;
+	}
+	#wrapper {
+		width: 100%;
+	}
+	#svgHula {
+		margin: 60px 0 0 -50px;
+
+	}
+	.toSumUp2{
+		position: absolute;
+		top:150px;
+		left: 20px;
+	}
+	.toSumUp1{
+		position: absolute;
+		top:150px;
+		right: 20px;
+	}
+}
+@media screen and (max-width: 998px){
+	#welcomeHeader h1 {
+		color: #e2c38d;
+		margin-top: 4px;
+		font-size: 40px;	
+	}
+	#welcomeHeader h3 {
+		margin: -15px;
+		font-size: 20px;
+		margin-left: 17px;
+		color: #e2c38d;
+	}
+	.headerBar {
+		float: right;
+		margin-right: 73px;
+		font-family: Serif;
+	}
+
+	.headerBar li {
+		margin-top: 33px;
+		margin-left: 25px;
+		float: right;
+		color: #e2c38d;
+		font-size: 17px;
+	}
+}
+@media screen and (max-width: 878px){
+	.pickHulaColor2{
+		margin-right: 80px;
+	}
+	#navLogo {
+		margin-top: -10px;
+		margin-left: 20px;
+		font-size: 50px;
+	}
+	.navUl a{
+		font-size: 15px;
+	}
+	.simbleWrapper{
+		left: 180px;
+	}
+}
+@media screen and (max-width: 815px){
+	.toSumUp2{
+		position: absolute;
+		top:-100px;
+		left: 100px;
+	}
+	.toSumUp1{
+		position: absolute;
+		top:-100px;
+		right: 400px;
+	}
+	.glyphicon-chevron-right {
+		font-size: 30px;
+	}
+	.glyphicon-chevron-left {
+		font-size: 30px;
+	}
+
+}
+
+@media screen and (max-width: 813px){
+	.summaryImg img{
+		width: 90%;
+		margin: 0px;
+	}
+	.summary {
+		width: 100%;
+		margin: 0px;
+	}
+}
+@media screen and (max-width: 780px) {
+	.navBar {
+		display: none;
+	}
+}
+@media screen and (max-width: 674px){
+	#svgHula {
+		width:100%;
+	}
+	#wrapper {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 605px){
+	.toSumUp2{
+		position: absolute;
+		top:-100px;
+		left: 50px;
+	}
+	.toSumUp1{
+		position: absolute;
+		top:-100px;
+		right: 400px;
+	}
+
+}
+@media screen and (max-width: 564px){ 
+	.toSumUp2{
+		position: absolute;
+		top:-100px;
+		left: 10px;
+	}
+	.toSumUp1{
+		position: absolute;
+		top:-100px;
+		right: 340px;
+	}
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 655px){
+	.liveColorDemoHula2{
+		float: left;
+		background: #d8d0c1;
+		height: 300px;
+		width: 400px;
+		margin-top:20px;
+		margin-left: 30px;
+	}	
+	#svgHula {
+		margin: 60px 0 0 -100px;
+		width: 500px;
+		height: 500px;
+	}
+}
+@media screen and (max-width: 502px){
+	.mainThirdPage{
+		height: 1200px;
+	}
+	.designHula{
+		text-align: right;
+		color: #000000;
+		margin-right: 10px;
+	}
+}
+@media screen and (max-width: 480px) {
+	#navLogo {
+		margin-top: -3px;
+		margin-left: 30px;
+		font-size: 40px;
+	}
+	.simble {
+		font-size: 20px;
+		left: 0px;
+	}
+	.summary {
+		height: 85%;
+	}
+	.optionSummary {
+		margin-top: 80px;
+	}
+	.toSumUp1{
+		position: absolute;
+		top:-100px;
+		right: 280px;
+	}
+}
+/******************* END Media***********************/
+
