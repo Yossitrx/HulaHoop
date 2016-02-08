@@ -1,34 +1,39 @@
-function getHulaId() {
-	var aKeyValue = window.location.search.substring(1).split("&");
-	var hulaId = aKeyValue[0].split("=")[1];
-	return hulaId;
-	};
+// function getHulaId() {
+// 	var aKeyValue = window.location.search.substring(1).split("&");
+// 	var hulaId = aKeyValue[0].split("=")[1];
+// 	return hulaId;
+// 	};
 
 
 
-function getDataFromJson(co) {
-	console.log("here");
-	var test = co;
-	$.getJSON('json/prod.json', function(data) {
-		$.each(data.products, function(k, v) {
-			if (test = v.id) {
-				console.log("HERE");
-			};
-		
-		});		
+
+function getDataFromJson(json_name) {
+
+	$.getJSON('json/' + json_name, function(data) {
+		var ul =  $('ul.pickHulaPattern');	 
+		for (var key in data.products){
+
+			var li = $('<li></li>');
+			var a = $('<a></a>', {
+				class: 'colorjquery',
+				id: data.products[key].id
+			});
+			a.attr('href','#');
+			var img = $('<img>', {
+				src: data.products[key].url
+			})
+			a.append(img);
+			li.append(a);
+			ul.append(li);
+		}		
 	});
-	return test;
 };
-
 
 
 var changeHulaColor = function() {
 
 	switch($(this).attr("id")){
 		case "a":
-			var co = "prodA";
-			var hulaId  = getDataFromJson(co);
-			console.log(hulaId);
 			$(".line1").css({
 				fill: '#D65F33'
 			});
@@ -85,9 +90,6 @@ var changeHulaColor = function() {
 
 
 
-
-
-
 $("document").ready(function() {
 		
 	$(".colorjquery").click(changeHulaColor);
@@ -111,11 +113,25 @@ $("document").ready(function() {
 	$('.question').click(function() {
 		$('#questionDiv').dialog();
 	});
+
+	//***************************************//
+	//										 //
+	// 		  HulaHoop1.html jQuery			 //				
+	//										 //
+	//***************************************//
+
+	var json1 = "prod.json",
+		json2 = "prod2.json";
+
+	getDataFromJson(json1);
+
+	//on click --> left 
+
 	$.getJSON('json/prod.json', function(data) {
 		console.log("i'm here 2");
 	});
 
-
+	//************ END page-1 ***************//
 });
 
 

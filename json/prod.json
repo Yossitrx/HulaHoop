@@ -2,13 +2,17 @@
 	"category":"Hulla Hoop",
 	"products": [
 		{
-			"id": "prodA",
-			"url": "/images/hula1.png",
-			"class": "kids",
-			"name": "fireHula",
-			"wight": 10,
-			"size": 40
+			"id": "a",
+			"url": "images/hula1.png"
 		
+		},
+		{
+			"id": "prodB",
+			"url": "images/hula1.png"
+		},
+		{
+			"id": "prodC",
+			"url": "images/hula1.png"
 		}
 	]
 

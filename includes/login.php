@@ -1,23 +1,18 @@
 <?php
+    //create a mySQL DB connection:
+   $dbhost = " 166.62.8.11";
+   $dbuser = "auxstudDB5";
+   $dbpass = "auxstud5DB1!";
+   $dbname = "tbl_hulaHoop_16";
+   $connection = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
+
+    //testing connection success
+    if(mysqli_connect_errno()) {
+    die("DB connection failed: " . mysqli_connect_error() . " (" . mysqli_connect_errno() . ")"
+    );
+    }
 
 
-   function login(){
+    echo "Done";
 
-      $user = 'Yossi';
-      $password = 'HulaHoop';
-      $db = 'HulaHoopDB';
-      $host = 'localhost';
-      $port = 8889;
-
-      $link = mysqli_init();
-      $success = mysqli_real_connect(
-         $link, 
-         $host, 2+
-          
-         $user, 
-         $password, 
-         $db,
-         $port
-      );
-      
-      echo "Connection successfully\n";
+?>

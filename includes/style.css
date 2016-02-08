@@ -367,6 +367,12 @@ ul {
 .glyphicon-chevron-left {
 	font-size: 70px;
 }
+
+/*.testImage {
+	width: 20px;
+	height: 20px;
+}*/
+
 /************************** END HoopStep1 ***************************/
 /***********************************
 **								  **
@@ -544,8 +550,8 @@ ul {
 
 @media screen and (max-width: 1280px){
 	.toSumUp2{
-		position: absolute;
-		top:150px;
+		/* position: absolute; */
+		top: 200px;
 		left: 100px;
 	}
 	.toSumUp1{
@@ -599,20 +605,20 @@ ul {
 	.liveColorDemoHula2{
 		float: left;
 		background: #d8d0c1;
-		height: 300px;
-		width: 300px;
+		height: 535px;
+		width: 500px;
 		margin-top:20px;
-		margin-left: 50px;
+		margin-left: 65px;
 	}	
 	#svgHula {
-		margin: 60px 0 0 -90px;
-		width: 400px;
-		height: 400px;
+		margin: 60px 0 0 -220px;
+		width: 800px;
+		height: 800px;
 	}
 	.toSumUp2{
-		position: absolute;
-		top:150px;
-		left: 90px;
+		/* position: absolute; */
+		top: 200px;
+		left: 75px;
 	}
 	.toSumUp1{
 		position: absolute;
@@ -628,13 +634,12 @@ ul {
 		width: 100%;
 	}
 	#svgHula {
-		margin: 60px 0 0 -50px;
-
+		margin: 60px 0 0 -80px;
 	}
 	.toSumUp2{
-		position: absolute;
-		top:150px;
-		left: 20px;
+		/* position: absolute; */
+		top: 200px;
+		left: 0px;
 	}
 	.toSumUp1{
 		position: absolute;
@@ -670,7 +675,7 @@ ul {
 }
 @media screen and (max-width: 878px){
 	.pickHulaColor2{
-		margin-right: 80px;
+		/* margin-right: 80px; */
 	}
 	#navLogo {
 		margin-top: -10px;
@@ -684,17 +689,52 @@ ul {
 		left: 180px;
 	}
 }
+
+
+@media screen and (max-width: 840px){
+	
+	#svgHula {
+		margin: 90px 0 0 -285px;
+		width: 900px;
+		height: 700px;
+	}
+	.liveColorDemoHula2{
+		/* float: left; */
+		/* background: #d8d0c1; */
+		height: 535px;
+		width: 470px;
+		margin-top:20px;
+		margin-left: 65px;
+	}
+	.toSumUp2 {
+	    /* position: absolute; */
+	    top: 200px;
+	    left: 5px;
+	}  
+}
+
 @media screen and (max-width: 815px){
 	.toSumUp2{
-		position: absolute;
-		top:-100px;
-		left: 100px;
+		/* position: absolute; */
+		top: 230px;
+		left: 20px;
 	}
 	.toSumUp1{
 		position: absolute;
 		top:-100px;
 		right: 400px;
 	}
+
+	.liveColorDemoHula2{
+		/* float: left; */
+		/* background: #d8d0c1; */
+		height: 535px;
+		width: 450px;
+		margin-top:20px;
+		margin-left: 65px;
+	}
+
+
 	.glyphicon-chevron-right {
 		font-size: 30px;
 	}
@@ -703,7 +743,6 @@ ul {
 	}
 
 }
-
 @media screen and (max-width: 813px){
 	.summaryImg img{
 		width: 90%;
@@ -714,20 +753,130 @@ ul {
 		margin: 0px;
 	}
 }
+
+@media screen and (max-width: 790px){
+
+	#svgHula {
+		margin: 90px 0 0 -305px;
+		width: 900px;
+		height: 700px;
+	}
+	.liveColorDemoHula2{
+		/* float: left; */
+		/* background: #d8d0c1; */
+		height: 535px;
+		width: 430px;
+		margin-top:20px;
+		margin-left: 65px;
+	}
+}
 @media screen and (max-width: 780px) {
 	.navBar {
 		display: none;
 	}
 }
+@media screen and (max-width: 770px){
+
+	#svgHula {
+		margin: 90px 0 0 -325px;
+		width: 900px;
+		height: 700px;
+	}
+	.liveColorDemoHula2{
+		/* float: left; */
+		/* background: #d8d0c1; */
+		height: 535px;
+		width: 400px;
+		margin-top:20px;
+		margin-left: 65px;
+	}
+}
+@media screen and (max-width: 740px){
+
+	#svgHula {
+		margin: 90px 0 0 -325px;
+		/* width: 900px; */
+		/* height: 700px; */
+	}
+	.liveColorDemoHula2{
+		/* float: left; */
+		/* background: #d8d0c1; */
+		height: 535px;
+		width: 370px;
+		margin-top:20px;
+		margin-left: 65px;
+	}
+}
+@media screen and (max-width: 710px){
+
+	#svgHula {
+		margin: 90px 0 0 -325px;
+		/* width: 900px; */
+		/* height: 700px; */
+	}
+
+	.pickHulaColor2 {
+    	margin-right: 40px;
+    	margin-right: 10px;
+   }
+	.liveColorDemoHula2{
+		/* float: left; */
+		/* background: #d8d0c1; */
+		height: 535px;
+		width: 370px;
+		margin-top:20px;
+		margin-left: 65px;
+	}
+}
+@media screen and (max-width: 690px){
+
+	#svgHula {
+		margin: 50px 0 0 -40px;
+		width: 400px;
+		height: 600px;
+	}
+
+	.pickHulaColor2 {
+    	width: 428px;
+    	height: 300px;
+    	margin-right: 90px;
+   }
+	.liveColorDemoHula2{
+		/* float: left; */
+		/* background: #d8d0c1; */
+		height: 400px;
+		width: 430px;
+		/* margin-top:20px; */
+		margin-left: 134px;
+	}
+
+	.pickHulaColor2 p {
+	    /* float: left; */
+	    /* text-align: center; */
+	    /* padding: 10px; */
+	    /* background: #aea9a9; */
+	    /* margin-top: 13px; */
+	    margin-left: 115px;
+	    /* margin-right: 11px; */
+	}
+
+	.btn-right {
+	    /* float: left; */
+	    /* margin-top: 20px; */
+	    /* border-radius: 40px; */
+	    /* background: #100F10; */
+	    margin-left: 100px;
+	}
+}
 @media screen and (max-width: 674px){
 	#svgHula {
-		width:100%;
+		/* width:100%; */
 	}
 	#wrapper {
 		width: 100%;
 	}
 }
-@media screen and (max-width: 605px){
+@media screen and (max-width: 607px){
 	.toSumUp2{
 		position: absolute;
 		top:-100px;
@@ -738,12 +887,16 @@ ul {
 		top:-100px;
 		right: 400px;
 	}
+	.pickHulaColor2 {
+    	margin-right: 41px;
+    	/* margin-right: 10px; */
+   }
 
 }
 @media screen and (max-width: 564px){ 
 	.toSumUp2{
 		position: absolute;
-		top:-100px;
+		top: -111px;
 		left: 10px;
 	}
 	.toSumUp1{
@@ -751,22 +904,77 @@ ul {
 		top:-100px;
 		right: 340px;
 	}
+	.pickHulaColor2 {
+    	margin-right: 41px;
+    	/* margin-right: 10px; */
+   }
+   	.liveColorDemoHula2{
+		/* float: left; */
+		/* background: #d8d0c1; */
+		height: 332px;
+		width: 370px;
+		/* margin-top:20px; */
+		margin-left: 70px;
+	}
+	#svgHula {
+		margin: 50px 0 0 -65px;
+		width: 400px;
+		height: 500px;
+	}
 
 }
 
+@media screen and (max-width: 505px){ 
+	.toSumUp2{
+		position: absolute;
+		top: -111px;
+		left: 10px;
+	}
+	.toSumUp1{
+		position: absolute;
+		top:-100px;
+		right: 340px;
+	}
+	.pickHulaColor2 {
+    	margin-right: 41px;
+    	/* margin-right: 10px; */
+   }
+   	.liveColorDemoHula2{
+		/* float: left; */
+		/* background: #d8d0c1; */
+		height: 332px;
+		width: 370px;
+		/* margin-top:20px; */
+		margin-left: 70px;
+	}
+	#svgHula {
+		margin: 50px 0 0 -65px;
+		width: 400px;
+		height: 500px;
+	}
+
+}
+
+
+
+
+
+
+
+
 @media screen and (min-width: 481px) and (max-width: 655px){
 	.liveColorDemoHula2{
-		float: left;
-		background: #d8d0c1;
-		height: 300px;
-		width: 400px;
-		margin-top:20px;
-		margin-left: 30px;
+		/* float: left; */
+		/* background: #d8d0c1; */
+		/* height: 300px; */
+		/* width: 400px; */
+		/* margin-top:20px; */
+		margin-left: 105px;
 	}	
 	#svgHula {
-		margin: 60px 0 0 -100px;
-		width: 500px;
-		height: 500px;
+		margin: 30px 0 0 -40px;
+		/* width: 500px; */
+		/* height: 500px; */
 	}
 }
 @media screen and (max-width: 502px){
@@ -801,5 +1009,77 @@ ul {
 		right: 280px;
 	}
 }
+
+@media screen and (max-width: 480px) {
+	#navLogo {
+		margin-top: -3px;
+		margin-left: 30px;
+		font-size: 40px;
+	}
+	.simble {
+		font-size: 20px;
+		left: 0px;
+	}
+	.summary {
+		height: 85%;
+	}
+	.optionSummary {
+		margin-top: 80px;
+	}
+	.toSumUp1{
+		position: absolute;
+		top:-100px;
+		right: 280px;
+	}
+
+
+	.liveColorDemoHula2{
+		float: left;
+		background: #d8d0c1;
+		height: 350px;
+		width: 300px;
+		margin-top:20px;
+		margin-left: 30px;
+	}	
+
+	#svgHula {
+		margin: 20px 0 0 -105px;
+		width: 400px;
+		height: 600px;
+	}
+	.pickHulaColor2 {
+    	margin-right: 40px;
+    	width: 300px;
+ }
+
+	.btn-right {
+	    /* float: left; */
+	    /* margin-top: 20px; */
+	    /* border-radius: 40px; */
+	    /* background: #100F10; */
+	    margin-left: 40px;
+	}
+
+	.pickHulaColor2 p {
+	    /* float: left; */
+	    /* text-align: center; */
+	    /* padding: 10px; */
+	    /* background: #aea9a9; */
+	    /* margin-top: 13px; */
+	    margin-left: 50px;
+	    margin-right: 11px;
+	}
+ 
+
+	.pickHulaPattern {
+	    /* list-style: none; */
+	    /* float: left; */
+	    margin-top: 20px;
+	    margin-left: 45px;
+	}
+
+}
+
+
 /******************* END Media***********************/
 
