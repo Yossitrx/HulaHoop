@@ -12,11 +12,9 @@
 	<!-- Optional theme -->
 	<link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
 	<!-- Latest compiled and minified JavaScript -->
-
 	<script src="bootstrap/js/bootstrap.min.js">
 	</script><!-- Hula hoop CSS -->
 	<link href="includes/style.css" rel="stylesheet"><!-- Hula hoop jQuery -->
-
 	<script src="includes/code.js">
 	</script>
 	<link href="jquery-ui-1.11.4.custom/jquery-ui.min.css" rel="stylesheet">
@@ -83,10 +81,10 @@
 					.התחילו לרקוד
 				</article>
 				<article class="summaryText">
-					<form id="summaryForm" name="summaryForm" action"" method="">
+					<form id="summaryForm" name="summaryForm" action="" method="GET">
 						<label><a href="#"><span aria-hidden="true" class=
 						"glyphicon glyphicon glyphicon-question-sign question"></span></a>
-						<input class="dataInputAge" list="age" name="hulaSize" required="">
+						<input class="dataInputAge" list="age" name="hulaSize" required>
 						<datalist id="age">
 							<option value="100">
 								ילדים
@@ -103,7 +101,7 @@
 						</datalist> גודל</label><br>
 						<label><a href="#"><span aria-hidden="true" class=
 						"glyphicon glyphicon glyphicon-question-sign question"></span></a>
-						<input class="dataInputKind" list="kind" name="hulaSize" required="">
+						<input class="dataInputKind" list="kind" name="hulaWeight" required="">
 						<datalist id="kind">
 							<option value="10">
 								קל
@@ -118,18 +116,19 @@
 								אולטימט
 							</option>
 						</datalist> משקל</label><br>
-						<label><input class="hulaAmount" name="amount" required="" type=
-						"text">כמות</label>
+						<label><a href="#"><span aria-hidden="true" class=
+						"glyphicon glyphicon glyphicon-question-sign question"></span></a>
+						<input class="hulaSelectColor"  type="text" name="hulaSelect" disabled>מודל</label><br>
+						<label><input class="hulaAmount" name="amount" required="" type="text">כמות</label><br>
+
+						<!-- button calculate -->
 					</form>
+					<button class="dataFromForm">Press</button>
 					<h2 id="displaySum"></h2>
 				</article>
 				<div class="summaryText">
-					<h2>מחיר</h2>
+					<h2><span class="hulaPrice"></span>  מחיר</h2>
 				</div>
-				<article class="summaryText">
-					עוד טקסט עוד טקסט<br>
-					עוד טקסט עוד טקסט עוד
-				</article>
 				<h2 id="addToCart"><a href="#">הוסף לעגלה</a></h2>
 				<article id="toMyFavorit">
 					<a href="#">הוסף לרשימה שלי <span aria-hidden="true" class=
@@ -155,7 +154,7 @@
 				</article>
 			</section>
 			<div id="questionDiv">
-				זהו הסבר על הבחרה שלך מקווה שעזרתי.
+				לכל שאלה אנא פנה לדף ההסבר.
 			</div>
 		</main>
 	</div>

@@ -1,16 +1,12 @@
-// function getHulaId() {
-// 	var aKeyValue = window.location.search.substring(1).split("&");
-// 	var hulaId = aKeyValue[0].split("=")[1];
-// 	return hulaId;
-// 	};
-
+var modelName = "kid";
 
 
 
 function getDataFromJson(json_name) {
 
-	$.getJSON('json/' + json_name, function(data) {
-		var ul =  $('ul.pickHulaPattern');	 
+
+	var getjson = $.getJSON('json/' + json_name, function(data) {
+		var ul =  $('.pickHulaPattern');	 
 		for (var key in data.products){
 
 			var li = $('<li></li>');
@@ -21,19 +17,27 @@ function getDataFromJson(json_name) {
 			a.attr('href','#');
 			var img = $('<img>', {
 				src: data.products[key].url
-			})
+			});
 			a.append(img);
 			li.append(a);
 			ul.append(li);
-		}		
+		}	
+	});
+
+	getjson.complete(function() {
+
+		$('.colorjquery').click(function(e){ 
+			e.preventDefault();
+			changeHulaColor(this.id);
+		});
 	});
 };
 
 
-var changeHulaColor = function() {
-
-	switch($(this).attr("id")){
-		case "a":
+var changeHulaColor = function(id) {
+	
+	switch(id){
+		case "prod1":
 			$(".line1").css({
 				fill: '#D65F33'
 			});
@@ -58,8 +62,9 @@ var changeHulaColor = function() {
 			$(".line8").css({
 				fill: '#7847FF'
 			});
+			modelName = "kid";
 			break;
-		case "b":
+		case "prod2":
 			$(".line1").css({
 				fill: 'red'
 			});
@@ -84,23 +89,43 @@ var changeHulaColor = function() {
 			$(".line8").css({
 				fill: 'red'
 			});
+			modelName = "kid2";
 			break;
 	}
 }
 
 
 
-$("document").ready(function() {
-		
-	$(".colorjquery").click(changeHulaColor);
 
-	$(".toSumUp2").click(function() {
-		window.location.href = "HoopStep2.html";
-	});
-	$(".toSumUp1").click(function() {
-		window.location.href = "HoopStep1.html";
-	});
+
+function getHulaId() {
+	var aKeyValue = window.location.search.substring(1).split("&");
+	if (aKeyValue == -1) {
+		return "";
+	};
+	var hulaId = aKeyValue[0].split("=")[1];
+	return hulaId;
+};
+
+
+
+$("document").ready(function() {
+	//***************************************//
+	//										 //
+	// 		    index.html jQuery			 //				
+	//										 //
+	//***************************************//
+	
+
+
+
+    //************ END page-0 ***************//
+	
+
+
+
 	$('#dialog').hide();
+
 	$('#mega').click(function() {
 		$( "#dialog" ).show('fast', function() {
 				
@@ -119,19 +144,92 @@ $("document").ready(function() {
 	// 		  HulaHoop1.html jQuery			 //				
 	//										 //
 	//***************************************//
-
-	var json1 = "prod.json",
+	
+	var json1 = "prod1.json",
 		json2 = "prod2.json";
 
 	getDataFromJson(json1);
+	//Left click
+	$('.btn-left').click(function() {
+		$('.pickHulaPattern').empty();
+		getDataFromJson(json2);
+	});
+	//Right click
+	$('.btn-right').click(function() {
+		$('.pickHulaPattern').empty();
+		getDataFromJson(json1);
+	});
+	$(".toSumUp2").click(function() {
+		console.log(modelName);
+		window.location.href = "HoopStep2.html?model=" + modelName;
+	});
+	//************ END page-1 ***************//
 
-	//on click --> left 
+	//***************************************//
+	//										 //
+	// 		  HulaHoop2.html jQuery			 //				
+	//										 //
+	//***************************************//
 
-	$.getJSON('json/prod.json', function(data) {
-		console.log("i'm here 2");
+	//go back to pick hulaHoop color 
+	$(".toSumUp1").click(function() {
+		window.location.href = "HoopStep1.html";
 	});
 
-	//************ END page-1 ***************//
+	var model = getHulaId();
+	if(model != "") {
+		$('.hulaSelectColor').val($('.hulaSelectColor').val() + model);
+	}
+
+
+	$('.dataFromForm').click(function() {
+
+		var hulaSize = $(".dataInputAge"),
+		hulaWeight = $(".dataInputKind"),
+		hulaModelColor = $('.hulaSelectColor'),
+		hulaAmount = $('.hulaAmount');
+
+		console.log("Size  " + hulaSize.val());
+		console.log("weight  " + hulaWeight.val());
+		console.log("amount  " + hulaAmount.val());
+		console.log("modelColor  " + hulaModelColor.val());
+
+
+
+		var sum = 10;
+		$('.hulaPrice').append(sum);
+		// var strs = $("form").serialize();
+		// var sum = strs.amount;
+		// console.log(sum);
+		// console.log('HHHH');
+
+	});
+
+
+   // 	var str = $( "form" ).serialize();
+   //  $( "#results" ).text( str );
+  	
+  	// $( "input[type='checkbox'], input[type='radio']" ).on( "click", showValues );
+  	// $( "select" ).on( "change", showValues );
+  	// showValues();
+
+
+	//button on click 
+	/*
+		get the form 
+		get the input value  
+		check if the values != "" (empty)
+		if its not empty {
+			sum = calculate 
+			catch the sum element and put there the sum 
+		}
+
+	*/
+
+	//************ END page-2 ***************//
+
+
+
 });
 
 
