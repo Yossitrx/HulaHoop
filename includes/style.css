@@ -12,7 +12,7 @@ main, section, header, footer,nav,article {
 }
 #wrapper {
 	margin: 0px auto;
-	width: 85%;
+	width: 100%;
 }
 .clear {
 	clear:both;
@@ -144,7 +144,7 @@ ul {
 	background: url("../images/main.png");
 	float: left;
 	width: 100%;
-	height: 691px;
+	height: 806px;
 	margin-top: -20px;
 	background-repeat: round;
 }
@@ -352,12 +352,12 @@ ul {
 .toSumUp2{
 	position: absolute;
 	top:250px;
-	left: 130px;
+	left: 70px;
 }
 .toSumUp1{
 	position: absolute;
 	top:250px;
-	right: 130px;
+	right: 65px;
 }
 .glyphicon-chevron-right {
 	font-size: 70px;
@@ -495,7 +495,15 @@ ul {
 	margin-top: 69px;
 	margin-left: 30px;
 }
-#questionDiv {
+#questionDivA {
+	text-align: center;
+	direction: rtl;
+}
+#questionDivB {
+	text-align: center;
+	direction: rtl;
+}
+#questionDivC {
 	text-align: center;
 	direction: rtl;
 }
@@ -504,7 +512,73 @@ ul {
 	font-size: 18px;
 	color: #3f3f3f;
 }
+
+.heartOpacity {
+	opacity: 1;
+}
 /************************** END HoopStep2 ************************/
+
+
+.storeCon {
+	padding-top: 20px;
+	width: 80%;
+	background: #d8d0c1;
+	float: left;
+	margin-left: 10%;
+}
+
+
+
+.thumbnail {
+	direction: rtl;
+}
+
+.thumbnailToBuy {
+	opacity: 0.5;
+	box-shadow: 10px 10px 10px #3f3f3f;
+}
+
+.thumbnail img{
+	width: 242px;
+	height: 200px;
+}
+
+.buyHulas {
+	position: absolute;
+	cursor: not-allowed;
+	opacity: 0.4;
+	width: 100px;
+	height: 60px;
+	top: 100px;
+	left: 200px;
+}
+
+.confirmOrder{
+	text-align: center;
+	font-size: 26px;
+	color: #fff;
+	padding-top: 20px;
+	border-radius: 4px;
+	position: absolute;
+	width: 200px;
+	height: 80px;
+	top: 100px;
+	left: 200px;
+	background: green;
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /***********************************
 **								  **
 **		Page-3 HoopStep2.html	  **
@@ -566,12 +640,12 @@ ul {
 @media screen and (max-width: 1280px){
 	.toSumUp2{
 		top: 200px;
-		left: 100px;
+		left: 49px;
 	}
 	.toSumUp1{
 		position: absolute;
 		top: 200px;
-		right: 100px;
+		right: 39px;
 	}
 
 }
@@ -631,12 +705,12 @@ ul {
 	.toSumUp2{
 		/* position: absolute; */
 		top: 200px;
-		left: 75px;
+		left: 25px;
 	}
 	.toSumUp1{
 		position: absolute;
 		top: 200px;
-		right: 90px;
+		right: 10px;
 	}
 }
 @media screen and (max-width: 1000px){
@@ -657,7 +731,7 @@ ul {
 	.toSumUp1{
 		position: absolute;
 		top: 200px;
-		right: 20px;
+		right: 1px;
 	}
 }
 @media screen and (max-width: 998px){
@@ -997,6 +1071,7 @@ ul {
 		height: 1200px;
 	}
 	.designHula{
+		position: relative;
 		text-align: right;
 		color: #000000;
 		margin-right: 10px;
@@ -1084,8 +1159,8 @@ ul {
 	.pickHulaColor2 {
     	margin-right: 40px;
     	width: 300px;
-    	height: 500px;
- 	}
+    	height: 530px;
+  }
 	.btn-right {
 	    /* float: left; */
 	    /* margin-top: 20px; */

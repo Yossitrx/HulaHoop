@@ -14,6 +14,7 @@ function getDataFromJson(json_name) {
 				class: 'colorjquery',
 				id: data.products[key].id
 			});
+			a.data('model',data.products[key].model);
 			a.attr('href','#');
 			var img = $('<img>', {
 				class: "prodImg",
@@ -29,14 +30,14 @@ function getDataFromJson(json_name) {
 
 		$('.colorjquery').click(function(e){ 
 			e.preventDefault();
-			changeHulaColor(this.id);
+			changeHulaColor(this.id,$(this).data("model"));
 		});
 	});
 };
 
 
-var changeHulaColor = function(id) {
-	
+var changeHulaColor = function(id,modelM) {
+	modelName = modelM;
 	switch(id){
 	//***************************************//
 	//										 //
@@ -65,7 +66,6 @@ var changeHulaColor = function(id) {
 			$(".line7").css({
 				fill: '#CFCFCF'
 			});
-			modelName = "kid";
 			break;
 	//***************************************//
 	//										 //
@@ -94,7 +94,6 @@ var changeHulaColor = function(id) {
 			$(".line7").css({
 				fill: '#BABABA'
 			});
-			modelName = "kid2";
 			break;
 	//***************************************//
 	//										 //
@@ -123,7 +122,6 @@ var changeHulaColor = function(id) {
 			$(".line7").css({
 				fill: '#6CA0BA'
 			});
-			modelName = "kid3";
 			break;
 	//***************************************//
 	//										 //
@@ -152,7 +150,6 @@ var changeHulaColor = function(id) {
 			$(".line7").css({
 				fill: '#7751BA'
 			});
-			modelName = "kid4";
 			break;
 	//***************************************//
 	//										 //
@@ -181,7 +178,6 @@ var changeHulaColor = function(id) {
 			$(".line7").css({
 				fill: '#087918'
 			});
-			modelName = "kid2";
 			break;
 	//***************************************//
 	//										 //
@@ -210,7 +206,6 @@ var changeHulaColor = function(id) {
 			$(".line7").css({
 				fill: '#3F3F3F'
 			});
-			modelName = "kid6";
 			break;
 	//***************************************//
 	//										 //
@@ -239,7 +234,6 @@ var changeHulaColor = function(id) {
 			$(".line7").css({
 				fill: '#11603A'
 			});
-			modelName = "kid7";
 			break;
 	//***************************************//
 	//										 //
@@ -268,7 +262,6 @@ var changeHulaColor = function(id) {
 			$(".line7").css({
 				fill: '#6ABA9D'
 			});
-			modelName = "kid8";
 			break;
 	}
 }
@@ -298,11 +291,8 @@ $("document").ready(function() {
 
 
 
+
     //************ END page-0 ***************//
-	
-
-
-
 	$('#dialog').hide();
 
 	$('#mega').click(function() {
@@ -313,9 +303,22 @@ $("document").ready(function() {
 	$('main').click(function() {
 		$('#dialog').hide();
 	});
-	$('#questionDiv').hide(); 
-	$('.question').click(function() {
-		$('#questionDiv').dialog();
+	$('#questionDivA').hide();
+	$('#questionDivB').hide();
+	$('#questionDivC').hide();
+
+
+	$('.questionA').click(function(e) {
+		e.preventDefault();
+		$('#questionDivA').dialog();
+	});
+	$('.questionB').click(function(e) {
+		e.preventDefault();
+		$('#questionDivB').dialog();
+	});
+	$('.questionC').click(function(e) {
+		e.preventDefault();
+		$('#questionDivC').dialog();
 	});
 
 	//***************************************//
@@ -359,8 +362,6 @@ $("document").ready(function() {
 	if(model != "") {
 		$('.hulaSelectColor').val($('.hulaSelectColor').val() + model);
 	}
-
-
 	$('.dataFromForm').click(function() {
 
 		var hulaSize = $(".dataInputAge"),
@@ -374,41 +375,52 @@ $("document").ready(function() {
 		console.log("modelColor  " + hulaModelColor.val());
 
 
-
-		var sum = 10;
-		$('.hulaPrice').append(sum);
-		// var strs = $("form").serialize();
-		// var sum = strs.amount;
-		// console.log(sum);
-		// console.log('HHHH');
-
+		var sum = (0.8 * parseInt(hulaSize.val()) + 0.8 * parseInt(hulaWeight.val())) * parseInt(hulaAmount.val());
+		console.log(sum);
+		$('.hulaPrice').html(sum);
 	});
 
 
-   // 	var str = $( "form" ).serialize();
-   //  $( "#results" ).text( str );
-  	
-  	// $( "input[type='checkbox'], input[type='radio']" ).on( "click", showValues );
-  	// $( "select" ).on( "change", showValues );
-  	// showValues();
+	//not working
+	$('.addToFavor').click(function(e){
+		e.preventDefault();
+		$(this).find('span').toggleClass('heartOpacity');
+	});
 
+	$('#addToCart').click(function(e) {
+		e.preventDefault();
 
-	//button on click 
-	/*
-		get the form 
-		get the input value  
-		check if the values != "" (empty)
-		if its not empty {
-			sum = calculate 
-			catch the sum element and put there the sum 
+		var hulaSize = $(".dataInputAge").val(),
+		hulaWeight = $(".dataInputKind").val(),
+		hulaModelColor = $('.hulaSelectColor').val(),
+		hulaAmount = $('.hulaAmount').val();
+		if (hulaSize == null || hulaWeight == null || hulaModelColor == null || hulaAmount == null ) {
+			return;
 		}
+		console.log("Size  " + hulaSize);
+		console.log("weight  " + hulaWeight);
+		console.log("amount  " + hulaAmount);
+		console.log("modelColor  " + hulaModelColor);
 
-	*/
+		$.post( "addToCart.php", 
+				{ 
+					"hulaSize": hulaSize, 
+					"hulaWeight": hulaWeight,
+					"hulaModelColor": hulaModelColor,
+					"hulaAmount": hulaAmount
 
+				})
+				.done(function(data){
+					console.log("success HERE");
+					$('.cartIndicator')
+						.text("נשלח בהצלחה")
+						.css("background", "#67A54D");
+				})
+				.fail(function(data){
+					console.log("faild");
+				});
+	});
 	//************ END page-2 ***************//
-
-
-
 });
 
 

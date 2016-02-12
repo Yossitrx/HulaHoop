@@ -1,31 +1,6 @@
 $("document").ready(function() {
 
-
-	// $.ajax({
-	// 	url: '/ggggg.php',
-	// 	type: 'GET',
-	// 	dataType: 'json'
-	// })
-	// .done(function() {
-
-	// 	var div = $("<div>,l,l,l,llmdsojocijiosjio</div>");
-	// 	$(".summary").append(div);
-	// 	console.log("success");
-	// })
-
-	// .fail(function() {
-	// 	console.log("error");
-	// })
-	// .always(function() {
-	// 	console.log("complete");
-	// });
-	
-
-	$.get("rawData.php", function(data) {
-		//console.log(data[0].name);
-		// $.each(data, function(i, val) {
-		// 	console.log(i);
-		// })
+	var getItems = $.get("rawData.php", function(data) {
 		var tumb, galeria;
 		galeria = $("#galleria");
 		for (var key in data){
@@ -33,7 +8,7 @@ $("document").ready(function() {
 					    '<div class="thumbnail">'+
 					      '<img src="'+data[key].image+'" alt="...">'+
 					      '<div class="caption">'+
-					        '<h3>'+data[key].name+'</h3>'+
+					        '<h3>'+data[key].weight+'</h3>'+
 					        '<h5>'+data[key].model+'</h5>'+
 					        '<p>Price: '+data[key].price+' sekels</p>'+
 					      '</div>'+
@@ -42,16 +17,24 @@ $("document").ready(function() {
 			galeria.append(tumb);
 			console.log(data[key].image);
 		}
-		
 	},'json');
 
+	getItems.complete(function() {
+		$('.thumbnail').click(function(){
+			console.log($(this));
+			$(this).toggleClass('thumbnailToBuy');
+		});
+	});
 
 
+	$('.buyHulas').click(function(){
 
-
-
-
-
+		var confirm = $('<section class="confirmOrder">תודה !!</section>');
+		var parent = $(this).parent();
+		$(this).remove();
+		parent.append(confirm);
+		confirm.show("slow");
+	});
 });
 
 

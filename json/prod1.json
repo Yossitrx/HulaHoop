@@ -4,35 +4,42 @@
 		{
 			"id": "prod1",
 			"url": "images/hula1.png",
-			"model": "kid"
+			"model": "kid-1"
 		},
 		{
 			"id": "prod2",
-			"url": "images/hula2.png"
+			"url": "images/hula2.png",
+			"model": "kid-2"
 		},
 		{
 			"id": "prod3",
-			"url": "images/hula3.png"
+			"url": "images/hula3.png",
+			"model": "kid-3"
 		},
 		{
 			"id": "prod4",
-			"url": "images/hula4.png"
+			"url": "images/hula4.png",
+			"model": "kid-4"
 		},
 		{
 			"id": "prod5",
-			"url": "images/hula5.png"
+			"url": "images/hula5.png",
+			"model": "kid-5"
 		},
 		{
 			"id": "prod6",
-			"url": "images/hula6.png"
+			"url": "images/hula6.png",
+			"model": "kid-6"
 		},
 		{
 			"id": "prod7",
-			"url": "images/hula7.png"
+			"url": "images/hula7.png",
+			"model": "kid-7"
 		},
 		{
 			"id": "prod8",
-			"url": "images/hula8.png"
+			"url": "images/hula8.png",
+			"model": "kid-8"
 		}
 	]
 
