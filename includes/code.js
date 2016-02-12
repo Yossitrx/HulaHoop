@@ -16,6 +16,7 @@ function getDataFromJson(json_name) {
 			});
 			a.attr('href','#');
 			var img = $('<img>', {
+				class: "prodImg",
 				src: data.products[key].url
 			});
 			a.append(img);
@@ -37,59 +38,237 @@ function getDataFromJson(json_name) {
 var changeHulaColor = function(id) {
 	
 	switch(id){
+	//***************************************//
+	//										 //
+	// 		   	     Image-1   	    		 //				
+	//										 //
+	//***************************************//
 		case "prod1":
 			$(".line1").css({
-				fill: '#D65F33'
+				fill: '#FF7F00'
 			});
 			$(".line2").css({
-				fill: '#FF4FB6'
+				fill: '#FFFF00'
 			});
 			$(".line3").css({
-				fill: '#FFA735'
+				fill: '#CFCFCF'
 			});
 			$(".line4").css({
-				fill: '#E5FF55'
+				fill: '#FF7F00'
 			});
 			$(".line5").css({
-				fill: '#FFFAC3'
+				fill: '#FFFF00'
 			});
 			$(".line6").css({
-				fill: '#DD2FFF'
+				fill: '#CFCFCF'
 			});
 			$(".line7").css({
-				fill: '#BC3EFF'
-			});
-			$(".line8").css({
-				fill: '#7847FF'
+				fill: '#CFCFCF'
 			});
 			modelName = "kid";
 			break;
+	//***************************************//
+	//										 //
+	// 		   	     Image-2   	    		 //				
+	//										 //
+	//***************************************//
 		case "prod2":
 			$(".line1").css({
-				fill: 'red'
+				fill: '#FF0000'
 			});
 			$(".line2").css({
-				fill: '#FF4FB6'
+				fill: '#FF7F00'
 			});
 			$(".line3").css({
-				fill: '#FFA735'
+				fill: '#BABABA'
 			});
 			$(".line4").css({
-				fill: '#E5FF55'
+				fill: '#FFA2EF'
 			});
 			$(".line5").css({
-				fill: '#FFFAC3'
+				fill: '#FF9FA2'
 			});
 			$(".line6").css({
-				fill: '#DD2FFF'
+				fill: '#BABABA'
 			});
 			$(".line7").css({
-				fill: '#BC3EFF'
-			});
-			$(".line8").css({
-				fill: 'red'
+				fill: '#BABABA'
 			});
 			modelName = "kid2";
+			break;
+	//***************************************//
+	//										 //
+	// 		   	     Image-3   	    		 //				
+	//										 //
+	//***************************************//
+		case "prod3":
+			$(".line1").css({
+				fill: '#91A6FF'
+			});
+			$(".line2").css({
+				fill: '#AF81FF'
+			});
+			$(".line3").css({
+				fill: '#6CA0BA'
+			});
+			$(".line4").css({
+				fill: '#BBD6FF'
+			});
+			$(".line5").css({
+				fill: '#505CFF'
+			});
+			$(".line6").css({
+				fill: '#6CA0BA'
+			});
+			$(".line7").css({
+				fill: '#6CA0BA'
+			});
+			modelName = "kid3";
+			break;
+	//***************************************//
+	//										 //
+	// 		   	     Image-4   	    		 //				
+	//										 //
+	//***************************************//			
+		case "prod4":
+			$(".line1").css({
+				fill: '#BD6AFF'
+			});
+			$(".line2").css({
+				fill: '#FF99DA'
+			});
+			$(".line3").css({
+				fill: '#7751BA'
+			});
+			$(".line4").css({
+				fill: '#B577FF'
+			});
+			$(".line5").css({
+				fill: '#F884FF'
+			});
+			$(".line6").css({
+				fill: '#7751BA'
+			});
+			$(".line7").css({
+				fill: '#7751BA'
+			});
+			modelName = "kid4";
+			break;
+	//***************************************//
+	//										 //
+	// 		   	     Image-5   	    		 //				
+	//										 //
+	//***************************************//			
+		case "prod5":
+			$(".line1").css({
+				fill: '#5C0792'
+			});
+			$(".line2").css({
+				fill: '#679669'
+			});
+			$(".line3").css({
+				fill: '#087918'
+			});
+			$(".line4").css({
+				fill: '#6FFF36'
+			});
+			$(".line5").css({
+				fill: '#9937C9'
+			});
+			$(".line6").css({
+				fill: '#087918'
+			});
+			$(".line7").css({
+				fill: '#087918'
+			});
+			modelName = "kid2";
+			break;
+	//***************************************//
+	//										 //
+	// 		   	     Image-6   	    		 //				
+	//										 //
+	//***************************************//			
+		case "prod6":
+			$(".line1").css({
+				fill: '#BFBFBF'
+			});
+			$(".line2").css({
+				fill: '#7F7F7F'
+			});
+			$(".line3").css({
+				fill: '#3F3F3F'
+			});
+			$(".line4").css({
+				fill: '#C2C2C2'
+			});
+			$(".line5").css({
+				fill: '#7F7F7F'
+			});
+			$(".line6").css({
+				fill: '#3F3F3F'
+			});
+			$(".line7").css({
+				fill: '#3F3F3F'
+			});
+			modelName = "kid6";
+			break;
+	//***************************************//
+	//										 //
+	// 		   	     Image-7   	    		 //				
+	//										 //
+	//***************************************//			
+		case "prod7":
+			$(".line1").css({
+				fill: '#4257B4'
+			});
+			$(".line2").css({
+				fill: '#FFC535'
+			});
+			$(".line3").css({
+				fill: '#11603A'
+			});
+			$(".line4").css({
+				fill: '#5B9545'
+			});
+			$(".line5").css({
+				fill: '#FFC23C'
+			});
+			$(".line6").css({
+				fill: '#11603A'
+			});
+			$(".line7").css({
+				fill: '#11603A'
+			});
+			modelName = "kid7";
+			break;
+	//***************************************//
+	//										 //
+	// 		   	     Image-8   	    		 //				
+	//										 //
+	//***************************************//			
+		case "prod8":
+			$(".line1").css({
+				fill: '#BB362A'
+			});
+			$(".line2").css({
+				fill: '#50945C'
+			});
+			$(".line3").css({
+				fill: '#6ABA9D'
+			});
+			$(".line4").css({
+				fill: '#BB362A'
+			});
+			$(".line5").css({
+				fill: '#11A523'
+			});
+			$(".line6").css({
+				fill: '#6ABA9D'
+			});
+			$(".line7").css({
+				fill: '#6ABA9D'
+			});
+			modelName = "kid8";
 			break;
 	}
 }

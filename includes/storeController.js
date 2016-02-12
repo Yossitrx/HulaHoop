@@ -26,7 +26,20 @@ $("document").ready(function() {
 		// $.each(data, function(i, val) {
 		// 	console.log(i);
 		// })
+		var tumb, galeria;
+		galeria = $("#galleria");
 		for (var key in data){
+			tumb = '<div class="col-sm-6 col-md-3">'+
+					    '<div class="thumbnail">'+
+					      '<img src="'+data[key].image+'" alt="...">'+
+					      '<div class="caption">'+
+					        '<h3>'+data[key].name+'</h3>'+
+					        '<h5>'+data[key].model+'</h5>'+
+					        '<p>Price: '+data[key].price+' sekels</p>'+
+					      '</div>'+
+					    '</div>'+
+				  	'</div>';
+			galeria.append(tumb);
 			console.log(data[key].image);
 		}
 		
