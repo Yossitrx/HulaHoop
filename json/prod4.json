@@ -1,0 +1,46 @@
+{
+	"category":"Hulla Hoop",
+	"products": [
+		{
+			"id": "prod1",
+			"url": "images/hula9.png",
+			"model":"special-1"
+		},
+		{
+			"id": "prod2",
+			"url": "images/hula10.png",
+			"model":"special-2"
+		},
+		{
+			"id": "prod3",
+			"url": "images/hula11.png",
+			"model":"special-3"
+		},
+		{
+			"id": "prod4",
+			"url": "images/hula12.png",
+			"model":"special-4"
+		},
+		{
+			"id": "prod5",
+			"url": "images/hula13.png",
+			"model":"special-5"
+		},
+		{
+			"id": "prod6",
+			"url": "images/hula14.png",
+			"model":"special-6"
+		},
+		{
+			"id": "prod7",
+			"url": "images/hula15.png",
+			"model":"special-7"
+		},
+		{
+			"id": "prod8",
+			"url": "images/hula16.png",
+			"model":"special-8"
+		}
+	]
+
+}

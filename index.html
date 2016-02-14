@@ -16,31 +16,30 @@
 		<link rel="stylesheet" href="includes/style.css">
 		<!-- Hula hoop jQuery -->
 		<script src="includes/code.js"></script>
-		<title>Hula Hoop page-1</title>
+		<title>Hula Hoop</title>
 	</head>
 	<body>
 		<div id="wrapper">
 			<header class="navbar navbar-default welcomeHeader">
-			  <div class="container-fluid">
-			  	<h1><a href="index.html" id="logo">MAZI</a></h1>
-			    <div class="navbar-header">
-			      <button type="button" class="navbar-toggle burgerColor collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-			        <span class="sr-only">Toggle navigation</span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			      </button>
-			    </div>
-
-			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">		
-			      <ul class="nav navbar-nav navbar-right headerNavUl">
-					<li><a href="#"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span>הרשימה שלי</a></li>
-					<li><a href="#"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>העגלה שלי</a></li>
-					<li><a href="#">הירשם</a></li>
-					<li><button type="button" class="connectBtn" id="mega">התחבר</button></li>
-			      </ul>	
-			    </div><!-- /.navbar-collapse -->
-			  </div><!-- /.container-fluid -->
+				<div class="container-fluid">
+			  		<h1><a href="index.html" id="logo">MAZI</a></h1>
+			    		<div class="navbar-header">
+			      			<button type="button" class="navbar-toggle burgerColor collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        			<span class="sr-only">Toggle navigation</span>
+			   					<span class="icon-bar"></span>
+			        			<span class="icon-bar"></span>
+			        			<span class="icon-bar"></span> 	
+			      			</button>
+			    		</div>
+			    	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">		
+			      		<ul class="nav navbar-nav navbar-right headerNavUl">
+							<li><a href="#"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span>הרשימה שלי</a></li>
+							<li><a href="cart.html"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>העגלה שלי</a></li>
+							<li><a href="#">הירשם</a></li>
+							<li><button type="button" class="connectBtn" id="mega">התחבר</button></li>
+			      		</ul>	
+			    	</div><!-- /.navbar-collapse -->
+			  	</div><!-- /.container-fluid -->
 			</header>
 			<nav class="navbar navbar-default navbar-static-top navBar">
 	  			<div class="container navBar">
@@ -53,7 +52,6 @@
 	  			</div>
 			</nav>
 			<main class="main">
-
 				<article class="openWord">
 					<h1>חישוקים שנעשים באהבה</h1><br>
 					״במטרה להביא שמחה, בריאות והנאה מרובה<br>
@@ -64,14 +62,15 @@
 				<h1 class="mainBtn"><a href="HoopStep1.html">התחל לעצב חישוק</a></h1>
 				<div id="dialog">
 					<h2 class="dialogHeader">התחבר</h2>
-					<form>
-						<input type="text" class="loginW" name="pass" placeholder="שם משתמש" required>
-						<input type="text" class="loginW" name="pass" placeholder="סיסמא" required><br>
-						<label class="checkBoxW"><input class="checkW" type="checkbox" name="remember" value="">זכור</label><br>
-						<label class="forgetW">שחכתי <u><a href="#">שם משתמש</a></u> או <u><a href="#">סיסמא</a></u></label>
-						<a href="#"><img class="social" src="images/facebookW.png"title="facebook" alt="facebook"></a>
-						<a href="#"><img class="social" src="images/googleW.png" title="google" alt="google"></a>
+					<form id="regPopup" name="regPopupForm" action="" method="GET">
+						<input type="text" class="loginW" name="user" placeholder="שם משתמש" required>
+						<input type="password" class="loginW" name="password" placeholder="סיסמא" required><br>
+						<button type="submit" class="btn btn-default loginUserBtn">התחבר</button>
+						<button id="logInUserClose" type="button" class="btn btn-default loginUserBtn loginUserCloseBtn">סגור</button>
 					</form>
+					<label class="forgetW">שחכתי <u><a href="#">שם משתמש</a></u> או <u><a href="#">סיסמא</a></u></label>
+					<a href="#" class="socialFace"></a>
+					<a href="#" class="socialGoogle"></a>
 				</div>
 			</main>
 		</div>		

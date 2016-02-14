@@ -3,28 +3,21 @@
 <head>
 	<meta charset="UTF-8">
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
-	<!-- Google fonts -->
-	<link href='https://fonts.googleapis.com/css?family=Noto+Sans:700italic,400'
-	rel='stylesheet' type='text/css'>
-	<script src="includes/jquery-2.1.4.min.js">
-	</script><!-- Latest compiled and minified CSS -->
+	<link href='https://fonts.googleapis.com/css?family=Noto+Sans:700italic,400' rel='stylesheet' type='text/css'>
+	<script src="includes/jquery-2.1.4.min.js"></script>
 	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	<!-- Optional theme -->
 	<link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="bootstrap/js/bootstrap.min.js">
-	</script><!-- Hula hoop CSS -->
-	<link href="includes/style.css" rel="stylesheet"><!-- Hula hoop jQuery -->
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<link href="includes/style.css" rel="stylesheet">
 	<script src="includes/code.js"></script>
-	<script src="includes/storeController.js"></script>
- 	<title>Hula Hoop Store</title>
+	<script src="includes/cartControl.js"></script>
+	<title>HulaHoop Cart</title>
 </head>
 <body>
 	<div id="wrapper">
 		<nav class="navbar navbar-default navBarPage">
 			<div class="container-fluid">
 				<h1><a href="index.html" id="navLogo">MAZI</a></h1>
-				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header">
 					<button aria-expanded="false" class="navbar-toggle burgerColor collapsed"
 					data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type=
@@ -32,7 +25,7 @@
 						<span class="sr-only">Toggle navigation</span>
 						<span class="icon-bar"></span>
 			        	<span class="icon-bar"></span>
-			        	<span class="icon-bar"></span> 
+			        	<span class="icon-bar"></span>  
 					</button>
 				</div>
 				<section class="simbleWrapper">
@@ -50,15 +43,12 @@
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container-fluid -->
 		</nav>
-		<main class="container mainStore ">
+		<main class="container mainCartPage mainThirdPage">
 			<article class="designHula">
-				<h1 class="storeSign orginstore">חנות</h1>
-				<button id="butBTN" class="btn btn-info buyHulas cantBuy">קנה</button>
+				<h1 class="storeSign">העגלה שלי</h1>
+				<button id="butBTN" class="btn btn-info buyHulas cantBuy">שלם</button>
 			</article>
-			<!-- Getting data from db -->
-			<section class="storeCon" id="galleria">
-				
-			</section>
+			<section class="storeCon" id="galleria"></section>
 		</main>
 	</div>
 </body>

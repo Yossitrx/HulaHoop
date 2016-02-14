@@ -1,6 +1,6 @@
 /***********************************
 **								  **
-**		   default css            **                      
+**		   Default css            **                      
 **							      **
 ***********************************/
 * {
@@ -90,7 +90,6 @@ ul {
 	margin-top: -10px;
 	color: #e2c38d;
 	font-size: 25px;
-
 }
 .glyphicon-shopping-cart {
 	margin-top: -10px;
@@ -101,7 +100,6 @@ ul {
 	margin-top: -10px;
 	color: #e2c38d;
 	font-size: 25px;
-
 }
 .connectBtn {
 	padding-left: 20px;
@@ -141,7 +139,7 @@ ul {
 	color: #E1DCE2;	
 }
 .main {
-	background: url("../images/main.png");
+	background: url("../images/main4.png");
 	float: left;
 	width: 100%;
 	height: 806px;
@@ -157,7 +155,6 @@ ul {
 .mainBtn {
 	margin: 50px;
 	text-align: right;
-	
 }
 .mainBtn a {
 	padding: 10px;
@@ -174,7 +171,7 @@ ul {
 	height: 426px;
 	position: absolute;
 	top: 230px;
-    left: 600px;
+	left: 500px;
 	z-index: 2000px;
 	border: 2px solid black;
 	background: #d3be9b;
@@ -203,15 +200,34 @@ ul {
 }
 .forgetW {
 	margin-right: 11px;
-
 }
 .forgetW a {
 	color: #101111;
 }
-.social{
+.socialFace{
+	background: url(../images/facebookW.png);
 	margin-top: 10px;
 	margin-right: 11px;
 	margin-bottom: 8px;
+	display: block;
+	width: 310px;
+	height: 55px;
+}
+.socialGoogle{
+	background: url(../images/googleW.png);
+	margin-top: 10px;
+	margin-right: 11px;
+	margin-bottom: 8px;
+	display: block;
+	width: 310px;
+	height: 55px;
+}
+.loginUserBtn {
+	margin-right: 10px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	background: #BCB9B9;
+	text-shadow: none;
 }
 /********************END PAGE-1**********************************/
 /***********************************
@@ -241,6 +257,7 @@ ul {
 }
 .simbleWrapper .glyphicon:hover {
 	color: #E9F5F7 ;
+	text-decoration: none;
 }
 .navUl {
 	margin-top: -6px;
@@ -264,7 +281,6 @@ ul {
 	margin-left: -30px;
 	direction: rtl;
 }
-
 .pickHulaColor2{
 	float: right;
 	margin-right: 30px;
@@ -444,8 +460,7 @@ ul {
 }
 #addToCart {
 	float: right;
-	margin-top: 30px;
-	margin-right: 22px;
+	margin-right: 20px;
 }
 #addToCart a {
 	padding: 10px;
@@ -464,9 +479,8 @@ ul {
 .glyphicon-question-sign {
 	color: black;
 }
-#toMyFavorit .glyphicon-heart {
+.heartColor {
 	color: #c64949;
-
 }
 #toMyFavorit a {
 	color:  #09110A;
@@ -475,15 +489,12 @@ ul {
 #toMyFavorit a:hover {
 	color:  #805999;
 }
-#toMyFavorit .glyphicon-heart:hover {
+.heartColor:hover {
 	color: #FF2D29;
 }
 .optionSummary {
-	/* float: left; */
-	/* top: 10px; */
 	position: absolute;
 	top: 600px;
-	/* bottom: 10px; */
 }
 .optionSummary ul {
 	padding-top: 0px;
@@ -495,89 +506,158 @@ ul {
 	margin-top: 69px;
 	margin-left: 30px;
 }
-#questionDivA {
-	text-align: center;
-	direction: rtl;
-}
-#questionDivB {
-	text-align: center;
-	direction: rtl;
-}
-#questionDivC {
-	text-align: center;
-	direction: rtl;
-}
 .hulaPrice{
 	margin-right: 10px;
 	font-size: 18px;
 	color: #3f3f3f;
 }
-
 .heartOpacity {
-	opacity: 1;
+	color: #FF2D29;
 }
-/************************** END HoopStep2 ************************/
-
-
-.storeCon {
-	padding-top: 20px;
-	width: 80%;
-	background: #d8d0c1;
-	float: left;
-	margin-left: 10%;
+.faceBook {
+	background: url(../images/faceBook.png);
+	width: 65px;
+	height: 65px;
+	display: block;
+	
 }
-
-
-
-.thumbnail {
+.pick {
+	background: url(../images/pick.png);
+	width: 65px;
+	height: 65px;
+	display: block;
+}
+.twitter {
+	background: url(../images/twitter.png);
+	width: 65px;
+	height: 65px;
+	display: block;		
+}
+.addToFavor {
+	margin-right: 60px;
+}
+.dataFromForm {
+	margin-right: -5px;
+	margin-top: 15px;
+	background: #BCB9B9;
+	text-shadow: none;
+}
+.cartIndicator {
+	margin-right: -5px;
+	margin-top: 15px;
+	background: #BCB9B9;
+	text-shadow: none;
+}
+.toolTip {
 	direction: rtl;
 }
+.sumUp {
+	margin-left: -102px;
+    padding: 16px;
+}
 
+/************************** END HoopStep2 ************************/
+
+/***********************************
+**								  **
+**		 Page-4 store.html        **                      
+**							      **
+***********************************/
+
+.mainStore {
+	width: 100%;
+	background: #f1e8d7;
+}
+.storeCon {
+	padding-top: 20px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    width: 80%;
+    background: #d8d0c1;
+    float: left;
+    margin-left: 10%;}
+.thumbnail {
+	direction: rtl;
+	background: #EDEDED;
+}
 .thumbnailToBuy {
 	opacity: 0.5;
 	box-shadow: 10px 10px 10px #3f3f3f;
 }
-
 .thumbnail img{
-	width: 242px;
-	height: 200px;
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
 }
-
 .buyHulas {
 	position: absolute;
 	cursor: not-allowed;
-	opacity: 0.4;
 	width: 100px;
 	height: 60px;
 	top: 100px;
 	left: 200px;
 }
-
-.confirmOrder{
-	text-align: center;
-	font-size: 26px;
-	color: #fff;
-	padding-top: 20px;
-	border-radius: 4px;
-	position: absolute;
-	width: 200px;
-	height: 80px;
-	top: 100px;
-	left: 200px;
-	background: green;
-	display: none;
+.canBuy{
+	opacity: 1;
+	background: #BFBFBF;
+	border: 1px solid #615E61;
 }
+.canBuy:hover {
+	background: #D8D1D9;
+	border: 1px solid #615E61;
+}
+.cantBuy{
+	opacity: 0.4;
+	background: #A9A49A;
+	border: 1px solid #615E61;
+}
+.cantBuy:hover {
+	background: #A9A49A;
+	border: 1px solid #615E61;
+}
+.confirmOrder {
+    text-align: center;
+    font-size: 18px;
+    color: #eee;
+    padding-top: 20px;
+    border-radius: 4px;
+    position: absolute;
+    width: 130px;
+    height: 70px;
+    top: 100px;
+    left: 200px;
+    background: #5cb85c;
+    display: none;
+    box-shadow: 10px 10px 30px #3f3f3f;
+}
+.simble:link {
+	text-decoration: none;
+	color: #e2c38d;
+}
+.simble:active {
+	text-decoration: none;
+	color: #e2c38d;
+}
+.simble:visited {
+	text-decoration: none;
+	color: #e2c38d;
+}
+/************************** END store.html ************************/
 
-
-
-
-
-
-
-
-
-
-
+/***********************************
+**								  **
+**		Page-5  Cart.html         **                      
+**							      **
+***********************************/
+.cartmd {
+	float: right;
+}
+.mainCartPage {
+    width: 100%;
+    background: #f1e8d7;
+    padding: 40px;
+}
+/************************** END Cart.html ************************/
 
 /***********************************
 **								  **
@@ -587,42 +667,37 @@ ul {
 **							      **
 ***********************************/
 .line1 {
-	fill:#D091C0;
+	fill:#FBFFFF;
 	stroke:#000000;
 	stroke-miterlimit:10;
 }
 .line2 {
-	fill:#D091C0;
+	fill:#FBFFFF;
 	stroke:#000000;
 	stroke-miterlimit:10;
 }
 .line3 {
-	fill:#D091C0;
+	fill:#393939;
 	stroke:#000000;
 	stroke-miterlimit:10;
 }
 .line4 {
-	fill:#D091C0;
+	fill:#FBFFFF;
 	stroke:#000000;
 	stroke-miterlimit:10;
 }
 .line5 {
-	fill:#D091C0;
+	fill:#FBFFFF;
 	stroke:#000000;
 	stroke-miterlimit:10;
 }
 .line6 {
-	fill:#D091C0;
+	fill:#393939;
 	stroke:#000000;
 	stroke-miterlimit:10;
 }
 .line7 {
-	fill:#D091C0;
-	stroke:#000000;
-	stroke-miterlimit:10;
-}
-.line8 {
-	fill:#D091C0;
+	fill:#393939;
 	stroke:#000000;
 	stroke-miterlimit:10;
 }
@@ -666,6 +741,10 @@ ul {
 	.summary {
 		height: 78%;
 	}
+	#dialog {
+		top: 230px;
+		left: 400px;
+	}
 }
 @media screen and (max-width: 1109px){
 	.liveColorDemoHula2{
@@ -680,6 +759,10 @@ ul {
 		margin: 80px 0 0 -180px;
 		width: 800px;
 		height: 800px;
+	}
+	#dialog {
+		top: 230px;
+		left: 320px;
 	}
 }
 @media screen and (max-width: 1050px){
@@ -703,7 +786,6 @@ ul {
 		height: 800px;
 	}
 	.toSumUp2{
-		/* position: absolute; */
 		top: 200px;
 		left: 25px;
 	}
@@ -711,6 +793,10 @@ ul {
 		position: absolute;
 		top: 200px;
 		right: 10px;
+	}
+	#dialog {
+		top: 230px;
+		left: 300px;
 	}
 }
 @media screen and (max-width: 1000px){
@@ -724,7 +810,6 @@ ul {
 		margin: 60px 0 0 -80px;
 	}
 	.toSumUp2{
-		/* position: absolute; */
 		top: 200px;
 		left: 0px;
 	}
@@ -732,6 +817,10 @@ ul {
 		position: absolute;
 		top: 200px;
 		right: 1px;
+	}
+	#dialog {
+		top: 230px;
+		left: 250px;
 	}
 }
 @media screen and (max-width: 998px){
@@ -751,7 +840,6 @@ ul {
 		margin-right: 73px;
 		font-family: Serif;
 	}
-
 	.headerBar li {
 		margin-top: 33px;
 		margin-left: 25px;
@@ -759,10 +847,16 @@ ul {
 		color: #e2c38d;
 		font-size: 17px;
 	}
+	.thumbnail img{
+		width: 80%;
+	}
+	#dialog {
+		top: 230px;
+		left: 220px;
+	}
 }
 @media screen and (max-width: 878px){
 	.pickHulaColor2{
-		/* margin-right: 80px; */
 	}
 	#navLogo {
 		margin-top: -10px;
@@ -775,6 +869,21 @@ ul {
 	.simbleWrapper{
 		left: 180px;
 	}
+	#dialog {
+		width: 382px;
+		height: 426px;
+		position: absolute;
+		top: 230px;
+	    left: 600px;
+		z-index: 2000px;
+		border: 2px solid black;
+		background: #d3be9b;
+		direction: rtl;
+	}
+	#dialog {
+		top: 230px;
+		left: 200px;
+	}
 }
 @media screen and (max-width: 840px){
 	#svgHula {
@@ -783,23 +892,22 @@ ul {
 		height: 700px;
 	}
 	.liveColorDemoHula2{
-		/* float: left; */
-		/* background: #d8d0c1; */
 		height: 535px;
 		width: 470px;
 		margin-top:20px;
 		margin-left: 65px;
 	}
 	.toSumUp2 {
-	    /* position: absolute; */
 	    top: 200px;
 	    left: 5px;
-	}  
+	} 
+	#dialog {
+		top: 230px;
+		left: 150px;
+	}
 }
-
 @media screen and (max-width: 815px){
 	.toSumUp2{
-		/* position: absolute; */
 		top: -100px;
 		left: 20px;
 	}
@@ -809,8 +917,6 @@ ul {
 		right: 400px;
 	}
 	.liveColorDemoHula2{
-		/* float: left; */
-		/* background: #d8d0c1; */
 		height: 535px;
 		width: 450px;
 		margin-top:20px;
@@ -833,7 +939,6 @@ ul {
 		margin: 0px;
 	}
 }
-
 @media screen and (max-width: 790px){
 	#svgHula {
 		margin: 90px 0 0 -305px;
@@ -841,8 +946,6 @@ ul {
 		height: 700px;
 	}
 	.liveColorDemoHula2{
-		/* float: left; */
-		/* background: #d8d0c1; */
 		height: 535px;
 		width: 430px;
 		margin-top:20px;
@@ -861,23 +964,20 @@ ul {
 		height: 700px;
 	}
 	.liveColorDemoHula2{
-		/* float: left; */
-		/* background: #d8d0c1; */
 		height: 535px;
 		width: 400px;
 		margin-top:20px;
 		margin-left: 65px;
 	}
+	.thumbnail img{
+		width: 70%;
+	}
 }
 @media screen and (max-width: 740px){
 	#svgHula {
 		margin: 90px 0 0 -325px;
-		/* width: 900px; */
-		/* height: 700px; */
 	}
 	.liveColorDemoHula2{
-		/* float: left; */
-		/* background: #d8d0c1; */
 		height: 535px;
 		width: 370px;
 		margin-top:20px;
@@ -887,16 +987,12 @@ ul {
 @media screen and (max-width: 710px){
 	#svgHula {
 		margin: 90px 0 0 -325px;
-		/* width: 900px; */
-		/* height: 700px; */
 	}
 	.pickHulaColor2 {
     	margin-right: 40px;
     	margin-right: 10px;
    	}
 	.liveColorDemoHula2{
-		/* float: left; */
-		/* background: #d8d0c1; */
 		height: 535px;
 		width: 370px;
 		margin-top:20px;
@@ -915,34 +1011,18 @@ ul {
     	margin-right: 90px;
    	}
 	.liveColorDemoHula2{
-		/* float: left; */
-		/* background: #d8d0c1; */
 		height: 400px;
 		width: 430px;
-		/* margin-top:20px; */
 		margin-left: 134px;
 	}
 	.pickHulaColor2 p {
-	    /* float: left; */
-	    /* text-align: center; */
-	    /* padding: 10px; */
-	    /* background: #aea9a9; */
-	    /* margin-top: 13px; */
 	    margin-left: 115px;
-	    /* margin-right: 11px; */
 	}
 	.btn-right {
-	    /* float: left; */
-	    /* margin-top: 20px; */
-	    /* border-radius: 40px; */
-	    /* background: #100F10; */
 	    margin-left: 100px;
 	}
 }
 @media screen and (max-width: 674px){
-	#svgHula {
-		/* width:100%; */
-	}
 	#wrapper {
 		width: 100%;
 	}
@@ -960,8 +1040,11 @@ ul {
 	}
 	.pickHulaColor2 {
     	margin-right: 41px;
-    	/* margin-right: 10px; */
    	}
+   	#dialog {
+		top: 230px;
+		left: 110px;
+	}
 }
 @media screen and (max-width: 564px){ 
 	.toSumUp2{
@@ -976,14 +1059,10 @@ ul {
 	}
 	.pickHulaColor2 {
     	margin-right: 41px;
-    	/* margin-right: 10px; */
    	}
    	.liveColorDemoHula2{
-		/* float: left; */
-		/* background: #d8d0c1; */
 		height: 332px;
 		width: 370px;
-		/* margin-top:20px; */
 		margin-left: 70px;
 	}
 	#svgHula {
@@ -991,12 +1070,19 @@ ul {
 		width: 400px;
 		height: 500px;
 	}
+	.sumUp {
+		margin-left: -60px;
+    	padding: 16px;
+	}
+	#dialog {
+		top: 230px;
+		left: 90px;
+	}
 }
-
 @media screen and (max-width: 505px){ 
 	.toSumUp2{
 		position: absolute;
-		top: -100px;
+		top: -113px;
 		left: 10px;
 	}
 	.toSumUp1{
@@ -1006,14 +1092,10 @@ ul {
 	}
 	.pickHulaColor2 {
     	margin-right: 41px;
-    	/* margin-right: 10px; */
    	}
    	.liveColorDemoHula2{
-		/* float: left; */
-		/* background: #d8d0c1; */
 		height: 332px;
 		width: 370px;
-		/* margin-top:20px; */
 		margin-left: 70px;
 	}
 	#svgHula {
@@ -1021,54 +1103,51 @@ ul {
 		width: 400px;
 		height: 500px;
 	}
+	#dialog {
+		top: 230px;
+		left: 70px;
+	}	
 }
 @media screen and (min-width: 481px) and (max-width: 655px){
 	.liveColorDemoHula2{
-		/* float: left; */
-		/* background: #d8d0c1; */
-		/* height: 300px; */
-		/* width: 400px; */
-		/* margin-top:20px; */
 		margin-left: 70px;
 	}	
 	#svgHula {
 		margin: 30px 0 0 -60px;
-		/* width: 500px; */
-		/* height: 500px; */
 	}
 	.summary {
 	    width: 100%;
 	    margin: 0px;
-	    /* height: 0px; */
 	}
 	.summaryImg {
-    	/* float: left; */
-    	/* margin-top: 27px; */
-    	/* margin-left: 30px; */
     	width: 60%;
  	}
  	.optionSummary {
-    	/* float: left; */
-    	/* top: 10px; */
     	position: absolute;
-    	top: 750px;
+    	top: 640px;
     	left: 50px;
-    	/* bottom: 10px; */
- 	}
+   }
 	.optionSummary img {
 		width: 60%;
 	}
 	.optionSummary ul li {
-    	/* list-style-type: none; */
-    	/* float: left; */
-    	/* padding-top: 0px; */
-    	/* margin-top: 69px; */
     	margin-left: 0px;
  	}
+ 	.faceBook {
+		margin-right: 20px;
+	}
+	.pick {
+		margin-right: 20px;
+	}
+	.buyHulas {
+		width: 100px;
+		top: 100px;
+		left: 50px;
+	}
 }
 @media screen and (max-width: 502px){
 	.mainThirdPage{
-		height: 1200px;
+		height: 100%;
 	}
 	.designHula{
 		position: relative;
@@ -1077,14 +1156,19 @@ ul {
 		margin-right: 10px;
 	}
 	.optionSummary {
-    	/* float: left; */
-    	/* top: 10px; */
-    	/* position: absolute; */
     	top: 850px;
-    	/* bottom: 10px; */
  	}
-	.optionSummary img {
-		
+	.buyHulas {
+		position: absolute;
+		cursor: not-allowed;
+		width: 100px;
+		height: 60px;
+		top: 50px;
+		left: 50px;
+	}
+	.storeSign {
+    	opacity: 0.6;
+    	margin-right: 80px;
 	}
 }
 @media screen and (max-width: 490px) {
@@ -1108,20 +1192,14 @@ ul {
 		top:-100px;
 		right: 280px;
 	}
-
 	.pickHulaColor2 {
     	margin-right: 18px;
-    	/* margin-right: 10px; */
    	}
-   .optionSummary {
-    	/* float: left; */
-    	/* top: 10px; */
-    	/* position: absolute; */
-    	/* top: 600px; */
-    	/* bottom: 10px; */
- 	}
+   	#dialog {
+		top: 230px;
+		left: 50px;
+	}
 }
-
 @media screen and (max-width: 480px) {
 	#navLogo {
 		margin-top: -3px;
@@ -1133,10 +1211,7 @@ ul {
 		left: 0px;
 	}
 	.summary {
-		height: 85%;
-	}
-	.optionSummary {
-		margin-top: 80px;
+		height: 89%;
 	}
 	.toSumUp1{
 		position: absolute;
@@ -1157,53 +1232,61 @@ ul {
 		height: 600px;
 	}
 	.pickHulaColor2 {
-    	margin-right: 40px;
+    	margin-right: 61px;
     	width: 300px;
-    	height: 530px;
-  }
+    	height: 560px;
+   }
 	.btn-right {
-	    /* float: left; */
-	    /* margin-top: 20px; */
-	    /* border-radius: 40px; */
-	    /* background: #100F10; */
 	    margin-left: 40px;
 	}
 	.pickHulaColor2 p {
-	    /* float: left; */
-	    /* text-align: center; */
-	    /* padding: 10px; */
-	    /* background: #aea9a9; */
-	    /* margin-top: 13px; */
 	    margin-left: 50px;
 	    margin-right: 11px;
 	}
 	.pickHulaPattern {
-	    /* list-style: none; */
-	    /* float: left; */
 	    margin-top: 20px;
 	    margin-left: 45px;
 	}
 	.optionSummary {
-    	/* float: left; */
-    	/* top: 10px; */
-    	/* position: absolute; */
-    	top: 1000px;
-    	left: 20px;
-    	/* bottom: 10px; */
-  	}
+		margin-top: 80px;
+		top: 940px;
+		left: 20px;
+		}
 	.optionSummary img {
 		width: 70%;
 	}
 	.optionSummary ul li {
-    	/* list-style-type: none; */
-    	/* float: left; */
-    	/* padding-top: 0px; */
-    	/* margin-top: 69px; */
     	margin-left: 0px;
   	  	margin-left: 10px;
  	}
+ 	.cartBox {
+ 		width: 100%;
+ 		padding: 50px;
+ 	}
+ 	#butBTN {
+ 		margin-left: -44px;
+    	margin-top: -46px;
+ 	}
+ 	.storeSign {
+ 		opacity: 0.6;
+    	margin-right: 65px;
+    	font-size: 30px;
+    	margin-top: -20px;
+ 	}
+ 	.orginstore {
+    	margin-right: 65px;
+    	font-size: 30px;
+    	margin-top: 0px;	
+ 	}
+ 	#dialog {
+		top: 230px;
+		left: 6px;
+	}
+	.confirmOrder {
+    	top: 30px;
+    	left: 70px;
 }
 
-
+}
 /******************* END Media***********************/
 
